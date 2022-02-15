@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Timesheets
+namespace Timesheets.API
 {
     public class Startup
     {
