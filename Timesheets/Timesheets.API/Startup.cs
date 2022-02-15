@@ -13,6 +13,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using Timesheets.DAL;
+using Timesheets.Domain;
+
 namespace Timesheets.API
 {
     public class Startup
@@ -27,6 +30,7 @@ namespace Timesheets.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IPersonRepository, PersonRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
